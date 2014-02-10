@@ -1,0 +1,18 @@
+ftp_server: 10.40.51.71
+local_directory: video_files
+extension: mp4
+upload_directory: converted_video_test
+bitrate_ratio: 5
+
+files:
+  - path: sample_mpeg4 (copy).mp4
+    exclude: yes
+
+  - path: subdir/sample_mpeg4.mp4
+    resolution: 1920x768
+    bitrate: 10
+    audio: no
+
+  - path: sample_mpeg4.mp4
+    cut_start: 00:00:01.0
+    cut_end: 00:00:02.0
